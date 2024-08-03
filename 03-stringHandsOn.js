@@ -20,7 +20,7 @@ function stringHandsOn(){
     console.log(`7.  Index of character "good" is: ${resultIndex}`);
 
     var subStrResult = result;
-    console.log(`8.  Substring starting from index 22; "${subStrResult.substr(22)}"`);
+    console.log(`8.  Substring starting from index 22: "${subStrResult.substr(22)}"`);
     
     var resultInclude = result;
     console.log(`9.  Does the string ends with "up"? : "${resultInclude.includes("up")}"`);
