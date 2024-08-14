@@ -58,13 +58,49 @@ console.log(`Is number 23 available in the array: ${arrayNumbers.includes(23)}`)
 console.log(`=============== 09 ===============`);
 console.log(arrayNumbers);
 console.log(`inserting number 55 & 66 at index 3`);
-arrayNumbers.splice(3, 0, 55,66)
+let arrayInsert = arrayNumbers.splice(3, 0, 55,66)
 console.log(`after inserting number 55 & 66 at index 3:`);
-console.log(arrayNumbers);
+console.log(arrayInsert);
 
 console.log(`=============== 10 ===============`);
 console.log(arrayNumbers);
 console.log(`deleting number 3 elements from index 4`);
-arrayNumbers.splice(4, 3)
+let arrayDelete = arrayNumbers.splice(4, 3)
 console.log(`after deleting 3 elements from index 4:`);
-console.log(arrayNumbers);
+console.log(arrayDelete);
+
+console.log(`=============== 11 ===============`);
+const arrayNum = [20,31,40,25,23,11,29,9,60,2,11];
+console.log(arrayNum);
+var addition = 0;
+console.log(`finding elements at even index position, and adding them`);
+for (let index = 0; index < arrayNum.length; index++) {
+    if (index%2==0) {
+        const element = arrayNum[index];
+        addition = addition + element
+    }
+}
+console.log(`The sum of elements at even index: ${addition}`);
+
+console.log(`=============== 12 ===============`);
+console.log(arrayNum);
+var addition = 0;
+console.log(`Finding elements at odd index positions, and adding them`);
+for (let index = 0; index < arrayNum.length; index++) {
+    if (index % 2 != 0) { 
+        const element = arrayNum[index];
+        addition = addition + element;
+    }
+}
+console.log(`The sum of elements at odd index: ${addition}`);
+
+
+console.log(`=============== 13 ===============`);
+console.log(arrayNum);
+var sum = 0;
+console.log(`Sum of all elements in array`);
+for (const element of arrayNum) {
+    sum = sum + element;
+}
+console.log(`Sum of all elements in array: ${sum}`);
+
