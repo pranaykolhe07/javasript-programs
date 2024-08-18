@@ -69,7 +69,7 @@ reverseStringUsingMethods("UI Developer");
 
 console.log(` `);
 
-console.log(`------Step 1: Without using Predefined methods------`);
+console.log(`------Step 2: Without using Predefined methods------`);
 function reverseStringManually(str){
     let reverseStr = "";
     for (let i = str.length-1; i >= 0; i--) {
