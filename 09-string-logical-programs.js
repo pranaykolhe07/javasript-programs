@@ -156,3 +156,32 @@ console.log(`Total count of words in string "${str3}" is: ${wordCount(str3)}`);
 
 str4 = "I am passionate software developer";
 console.log(`Total count of words in string "${str4}" is: ${wordCount(str4)}`);
+
+console.log(` `);
+
+console.log(`=====10.Program to find duplicate characters=====`);
+
+function duplicateCharCount(str) {
+    const charCount = {};
+
+    str = str.toLowerCase();
+
+    for (let char of str) {
+        if (char >= "a" && char <= "z") {
+            charCount[char] = (charCount[char] || 0) + 1;
+        }
+    }
+
+    for (const char in charCount) {
+        if (charCount[char] > 1) {
+            console.log(`${char} - ${charCount[char]}`);
+        }
+    }
+}
+
+console.log(`Duplicate character in "Banana" with count is:`);
+duplicateCharCount("Banana");
+console.log(`Duplicate character in "Apple" with count is:`);
+duplicateCharCount("Apple");
+console.log(`Duplicate character in "Software Developer" with count is:`);
+duplicateCharCount("Software Developer");
